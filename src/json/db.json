@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "titulo": "Dire Straits - Sultans Of Swing",
+        "capa": "https://i.im.ge/2023/09/11/6urq68.sultans.jpg",
+        "link": "https://www.youtube.com/embed/0fAQhSRLQnM?si=prdbzv8lY9OwoNgT&amp;controls=0"
+    },
+    {
+        "id": 2,
+        "titulo": "Red Hot Chili Peppers - Californication",
+        "capa": "https://i.im.ge/2023/09/11/6urCEc.Californication.jpg",
+        "link": "https://www.youtube.com/embed/YlUKcNNmywk?si=5oQf-plv3h94AoX3&amp;controls=0"
+    },
+    {
+        "id": 3,
+        "titulo": " The Rolling Stones - Satisfaction",
+        "capa": "https://i.im.ge/2023/09/11/6u2SZx.rolling.jpg",
+        "link": "https://www.youtube.com/embed/7JRZ5CCzQ-A?si=-n7nF2J4UAhtCz12&amp;controls=0"
+    },
+    {
+        "id": 4,
+        "titulo": "Come as You Are - Nirvana",
+        "capa": "https://i.im.ge/2023/09/11/6u2LA6.nirvana.jpg",
+        "link": "https://www.youtube.com/embed/0oi1fGhaJl8?si=Gbo8H-w4ZwuGbU_T&amp;controls=0"
+    },
+
+    {
+        "id": 5,
+        "titulo": "Nirvana - Smells Like Teen Spirit",
+        "capa": "https://i.im.ge/2023/09/11/6u2LA6.nirvana.jpg",
+        "link": "https://www.youtube.com/embed/Q6SHkQMFVlc?si=3k7c2U1pJw5RzEnl&amp;controls=0"
+    },
+
+    {
+        "id": 6,
+        "titulo":"Red Hot Chili Peppers - Dani California",
+        "capa": "https://i.im.ge/2023/09/11/6urCEc.Californication.jpg",
+        "link": "https://www.youtube.com/embed/C2-CWmRuE9s?si=wKSWhWdxXRurfZrZ&amp;controls=0"
+    },
+   
+    {
+        "id": 7,
+        "titulo":"Black Sabbath - Paranoid",
+        "capa": "https://i.im.ge/2023/09/11/6uDzqm.black-saba.jpg",
+        "link": "https://www.youtube.com/embed/WfmXJuurKH8?si=UX1qhC6cfre221iz&amp;controls=0"
+    }
+]
