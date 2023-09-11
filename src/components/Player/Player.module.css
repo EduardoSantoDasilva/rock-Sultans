@@ -2,3 +2,15 @@ iframe {
     height: 80vh;
 }
 
+.VideosRecomendados{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloOutrosVideos{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}

@@ -4,6 +4,7 @@ import videos from 'json/db.json';
 import { useParams } from "react-router-dom";
 import styles from "./Player.module.css"
 import NaoEncontrada from "pages/NaoEncontrada";
+import Card from "components/Card";
 
 function Player(){
 
@@ -16,6 +17,9 @@ function Player(){
         return <NaoEncontrada/>
     }
 
+    const VideosRecomendados = videos.filter((video)=>video.id !== Number(parametros.id))
+      .sort((a,b)=> b.id - a.id).slice(0,4);
+
     return(
         <>
             <Banner imagem="Player"/>
@@ -25,13 +29,20 @@ function Player(){
             <section>
             <iframe className={styles.container}
                 width="100%"
-                
                 src={video.link}
                 title={video.titulo}
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
             </section>
             
+            <h2 className={styles.tituloOutrosVideos}>Outros videos que você pode gostar:</h2>
+              <ul className={styles.VideosRecomendados}>
+                {VideosRecomendados.map((video)=>(
+                    <li key={video.id}>
+                      <Card {...video}/>
+                    </li>
+                ))}
+              </ul>
         </>
     )
 }
