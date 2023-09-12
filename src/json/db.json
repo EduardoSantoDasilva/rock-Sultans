@@ -43,5 +43,14 @@
         "titulo":"Black Sabbath - Paranoid",
         "capa": "https://i.im.ge/2023/09/11/6uDzqm.black-saba.jpg",
         "link": "https://www.youtube.com/embed/WfmXJuurKH8?si=UX1qhC6cfre221iz&amp;controls=0"
+    },
+
+    {
+        "id": 8,
+        "titulo":"Lynyrd Skynyrd - Sweet Home Alabama",
+        "capa": "https://i.im.ge/2023/09/12/6qCNxF.Lynyrd-Skynyrd.jpg",
+        "link": "https://www.youtube.com/embed/-35W_FWCT9Q?si=xjGs68oE1keT68z6"
     }
+
+    
 ]

@@ -1,16 +1,19 @@
-iframe {
+.container {
     height: 80vh;
 }
 
 .VideosRecomendados{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .tituloOutrosVideos{
     text-align: center;
     font-size: 32px;
     font-weight: 500;
+}
+
+.liCard{
+   
 }
