@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import styles from "./Player.module.css"
 import NaoEncontrada from "pages/NaoEncontrada";
 import Card from "components/Card";
+import Safe from "react-safe";
 
 function Player(){
 
@@ -35,14 +36,26 @@ function Player(){
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
             </section>
         
-                <h2 className={styles.tituloOutrosVideos}>Outros videos que você pode gostar:</h2>
-                <ul className={styles.VideosRecomendados}>
-                    {VideosRecomendados.map((video)=>(
-                        <li key={video.id} className={styles.liCard}>
-                            <Card {...video}/>
-                        </li>
-                    ))}
-                </ul>
+            <h2 className={styles.tituloOutrosVideos}>Outros videos que você pode gostar:</h2>
+            <ul className={styles.VideosRecomendados}>
+                {VideosRecomendados.map((video)=>(
+                    <li key={video.id} className={styles.liCard}>
+                        <Card {...video}/>
+                    </li>
+                ))}
+            </ul>
+            
+            <div id="disqus_thread"></div>
+            <Safe.script>
+                {
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://https-rock-sultans-vercel-app.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })()
+                }
+            </Safe.script>
             
         </>
     )
