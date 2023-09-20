@@ -6,6 +6,12 @@ import styles from "./Player.module.css"
 import NaoEncontrada from "pages/NaoEncontrada";
 import Card from "components/Card";
 import Safe from "react-safe";
+import {Swiper, SwiperSlide} from "swiper/react";
+import { A11y, Navigation} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import './slider.css'
+
 
 function Player(){
 
@@ -19,7 +25,7 @@ function Player(){
     }
 
     const VideosRecomendados = videos.filter((video)=>video.id !== Number(parametros.id))
-      .sort((a,b)=> b.id - a.id).slice(0,4);
+      .sort((a,b)=> b.id - a.id).slice(0,video.length);
 
     return(
         <>
@@ -38,11 +44,23 @@ function Player(){
         
             <h2 className={styles.tituloOutrosVideos}>Outros videos que você pode gostar:</h2>
             <ul className={styles.VideosRecomendados}>
-                {VideosRecomendados.map((video)=>(
-                    <li key={video.id} className={styles.liCard}>
-                        <Card {...video}/>
-                    </li>
-                ))}
+                <Swiper
+                   
+                    slidesPerView={4}
+                    modules={[Navigation, A11y]}
+                    navigation = {true}
+                    
+                >
+                    {VideosRecomendados.map((video)=>(
+                        <SwiperSlide>
+                            <li key={video.id}>
+                                <Card {...video}/>
+                            </li>
+                        </SwiperSlide>
+                       
+                    ))}
+                </Swiper>
+              
             </ul>
             
             <div id="disqus_thread"></div>

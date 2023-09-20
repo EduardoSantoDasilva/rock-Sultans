@@ -1,0 +1,15 @@
+.swiper-button-next{
+    color: rgb(25, 172, 35);
+}
+
+.swiper-button-prev{
+    color: rgb(25, 172, 35);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 60px;
+}
+
+.swiper-button-next:after, .swiper-button-next:after {
+    font-size: 60px;
+}
